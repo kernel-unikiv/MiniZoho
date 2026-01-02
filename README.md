@@ -35,5 +35,5 @@ Este projeto foi desenvolvido pelo nosso grupo para ajudar pequenos empreendedor
 <!-- Contato -->
 <h2>📫 Contato</h2>
 <p>
-Grupo Kernel-Unikiv - <a href="mailto:mendeseduardo.my@exemplo.com">teuemail@exemplo.com</a>
+Grupo Kernel-Unikiv - <a href="mailto:mendeseduardo.my@exemplo.com">KERNEL_UNIKIV</a>
 </p>
