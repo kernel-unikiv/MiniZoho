@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #0b4a8e;
+    color: #fff;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links button {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.search-box {
+    max-width: 400px;
+    margin: auto;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* CONTACTS */
+.contacts-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#contactList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#contactList li {
+    background: #f1f5f9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contactList button {
+    background: #e53935;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content input {
+    padding: 10px;
+}
+
+.close-btn {
+    background: #ccc;
+}
+
+/* TOAST */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #0b4a8e;
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* UTIL */
+.hidden {
+    display: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #0b4a8e;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}

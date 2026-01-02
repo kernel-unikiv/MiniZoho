@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Zoho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">MiniZoho</div>
+
+    <ul class="nav-links">
+        <li><button id="openModalBtn">Adicionar Contato</button></li>
+        <li><button id="toggleListBtn">Lista de Contatos</button></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Gerencie seus contatos com eficiência</h1>
+        <p>Plataforma inspirada no Zoho, usando Árvore AVL para buscas rápidas e organização perfeita. </p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Buscar contato pelo nome...">
+        </div>
+    </div>
+</section>
+
+<!-- LISTA DE CONTATOS (OCULTA) -->
+<section class="contacts-section hidden" id="contactsSection">
+    <h2>Lista de Contatos</h2>
+    <ul id="contactList"></ul>
+</section>
+
+<!-- MODAL -->
+<div class="modal hidden" id="modal">
+    <div class="modal-content">
+        <h3>Novo Contato</h3>
+        <input type="text" id="nameInput" placeholder="Nome">
+        <input type="text" id="phoneInput" placeholder="Telefone">
+        <button id="addContactBtn">Adicionar</button>
+        <button class="close-btn" id="closeModalBtn">Cancelar</button>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast hidden" id="toast">Contato adicionado com sucesso ✔</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div>
+            <h4>MiniZoho</h4>
+            <p>Gerenciador moderno de contatos com AVL criado pelo grupo KERNEL orientago pelo Eng. Joaquim João Nsaku Ventura</p>
+        </div>
+        <div>
+            <h4>Funcionalidades</h4>
+            <p>Adicionar • Buscar • Listar • Remover</p>
+        </div>
+        <div>
+            <h4>Responsivo</h4>
+            <p>Mobile • Tablet • Desktop</p>
+        </div>
+    </div>
+    <p class="copyright">© 2025 KERNEL</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
